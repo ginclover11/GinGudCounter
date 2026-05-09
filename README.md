@@ -11,7 +11,7 @@ Descomprimí la carpeta y ejecutá `GitGudCounter.exe`.
 ## Uso en OBS
 
 1. Abrí el programa
-2. Copiá la URL que aparece arriba: `http://localhost:7373/overlay`
+2. Copiá la URL que aparece en la parte de arriba del programa
 3. En OBS: **+ → Browser Source**
 4. Pegá la URL y ajustá el ancho para que coincida con tu overlay
 
@@ -30,11 +30,10 @@ Descomprimí la carpeta y ejecutá `GitGudCounter.exe`.
 | Boss Anterior | F9 |
 | Reset Run | F10 |
 
-Los hotkeys funcionan aunque el programa esté minimizado. Son configurables desde el tab Hotkeys.
-
 ## Logos de juegos
 
-Poné los logos en la carpeta `assets/` con estos nombres exactos:
+No puedo subir los logos por temas de copy y que me lo tiren, pero les recomiendo https://www.steamgriddb.com/ para descargarlos, tienen buena calidad y la resolucion perfecta
+Poné los logos en la carpeta `assets/` con estos nombres exactos para cada juego:
 
 ```
 assets/
@@ -48,21 +47,4 @@ assets/
 ```
 
 Se aplican automáticamente al iniciar un run con el template correspondiente.
-
-## Ejecutar desde el código fuente
-
-Requiere Python 3.9+.
-
-```bash
-pip install -r requirements.txt
-python main.py
-```
-
-## Compilar el .exe
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile --noconsole --name "GitGudCounter" main.py
-```
-
-El ejecutable queda en `dist/GitGudCounter.exe`. Copialo a su propia carpeta junto con la carpeta `assets/`.
+De momento solo funciona con juegos de FromSoftware pero puedes crear tu propio template y cargar el logo del juego en cuestion
