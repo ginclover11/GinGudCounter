@@ -58,6 +58,8 @@ Download `.exe` from [Releases](../../releases)
 
 ## Default Hotkeys
 
+| Acción | Tecla |
+|---|---|
 | Boss Hit | F1 |
 | Block | F2 |
 | On way hit | F3 |
